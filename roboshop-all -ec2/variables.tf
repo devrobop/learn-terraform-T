@@ -1,20 +1,20 @@
 
 variable "domain_name" {
-    default = "devrobo.online"
+  default = "devrobo.online"
   
 }
-variable "component" {
+variable "components" {
     default = {
       frontend = {}
       catalogue ={}
-      mongo = {}
-      redis = {}
+      mongo    = {}
+      redis    = {}
       rabbitmq = {}
-      cart = {}
-      mysql = {}
-      user = {}
+      cart     = {}
+      mysql    = {}
+      user     = {}
       shipping = {}
-      payment = {}
+      payment  = {}
       dispatch = {}
               
     }
