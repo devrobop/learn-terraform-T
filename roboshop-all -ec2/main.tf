@@ -12,7 +12,7 @@ resource "aws-instance" "instance" {
 
 resource "aws_route53_record" "dns_record" {
   for_each = var.component
-  zone_id = data.aws_route53_zone.zone.zone.id 
+  zone_id = data.aws_route53_zone.zone.zone_id 
   name    = "${each.key}.dev.${var.domain_name}"
   type    = "A"
   ttl     = 15  
