@@ -1,5 +1,5 @@
 
-resource "aws-instance" "instance" {
+resource "aws_instance" "instance" {
     for_each               = var.components
     ami                    = data.aws_ami.ami.image_id
     instance_type          = "t3.small"
