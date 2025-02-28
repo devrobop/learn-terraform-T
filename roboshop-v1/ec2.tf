@@ -27,7 +27,7 @@ resource "aws_instance" "mongo" {
 }
 
 resource "aws_route53_record" "mongo" {
-  zone_id = 
+  zone_id = "Z09836251ISJVAKGIPMKY"
   name    = "mongo.dev.devrobo.online"
   type    = "A"
   ttl     = 15
